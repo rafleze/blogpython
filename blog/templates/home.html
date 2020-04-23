@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <head>
+        <title>Il mio primo blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1>
+                <a href="">Il mio promo blog</a>
+            </h1>
+        </div>
+        <div>
+            {% for articolo in articoli %}
+                <h2>{{articolo.title}}</h2>
+                <div>
+                    {{articolo.data_pubblicazione}}{% if articolo.author %} - pubblicato da {{articolo.author}}{% endif %}
+                </div>
+                <p>{{articolo.text}}</p>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>
