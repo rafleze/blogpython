@@ -25,7 +25,7 @@ SECRET_KEY = 'b&$m3tv(y4q-uaho^!4!*y6d3!fcmzm)=#)+2_g!-e3$()(3j-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["blogpython.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["blogpython.com", "127.0.0.1", "rafleze.pythonanywhere.com"]
 
 
 # Application definition
